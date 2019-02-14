@@ -128,3 +128,16 @@ header nav a:hover {
 .projectsContent img:hover {
     content: url("../images/code-snippet-grey.png");
 }
+
+.footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footerContent img {
+    height: 7%;
+    width: 7%;
+    padding-right: 1rem;
+}
