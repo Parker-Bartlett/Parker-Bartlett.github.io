@@ -124,3 +124,7 @@ header nav a:hover {
     width: 60%;
     border: 2px solid white; 
 }
+
+.projectsContent img:hover {
+    content: url("../images/code-snippet-grey.png");
+}
