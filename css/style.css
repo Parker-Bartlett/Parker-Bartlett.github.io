@@ -93,3 +93,34 @@ header nav a:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.skillsContent {
+    text-align: center;
+}
+
+.projects {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+    background-color: #a6fd04;
+    width: 100%;
+    text-align: center;
+}
+
+.projectsContent {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem 1rem;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    padding-bottom: 2rem;
+}
+
+.projectsContent img {
+    margin-top: .5rem;
+    width: 60%;
+    border: 2px solid white; 
+}
