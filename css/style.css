@@ -57,7 +57,7 @@ header nav a:hover {
 
 
 .intro {
-    margin-top: 5rem;
+    margin-top: 3rem;
 
 }
 
@@ -66,9 +66,21 @@ header nav a:hover {
 }
 
 .bottomOfIntro img {
-    padding-top: 15rem;
+    padding-top: 5rem;
     width: 100%;
 
+}
+
+.headshot {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.headshot img {
+    height: 30%;
+    width: 30%;
+    border-radius: 100%;
+    border: 2px #a6fd04 solid;
 }
 
 .aboutMe {
