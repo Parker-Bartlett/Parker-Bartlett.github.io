@@ -14,8 +14,8 @@ html {
 }
 
 header img {
-    height: 3%;
-    width: 3%;
+    height: 3.5rem;
+    width: 2.5rem;
     margin-left: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -121,7 +121,7 @@ header nav a:hover {
     display: grid;
     width: 50%;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1rem  ;
     margin: 0 auto;
 }
 
