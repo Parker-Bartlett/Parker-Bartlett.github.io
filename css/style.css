@@ -120,8 +120,8 @@ header nav a:hover {
 .projectsContent {
     display: grid;
     width: 50%;
-    grid-template-columns: 50% 50%;
-    grid-gap: 1rem 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
     margin: 0 auto;
 }
 
