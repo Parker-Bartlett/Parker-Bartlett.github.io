@@ -5,81 +5,119 @@
 }
 
 html {
-    font: 20px/1.618 sans-serif;
+    font: 1em 'Alegreya Sans', sans-serif;
 }
 
 .container {
     margin: 0 auto;
-    width: 50%;
+    /* width: 50%; */
 }
 
-header img {
-    height: 3.5rem;
-    width: 2.5rem;
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+
+/* header */
+
+.header {
+    color: rgba(255, 255, 255, .5);
+    background-color: rgba(21,31,33,0.5);
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 1000;
 }
 
-header nav {
-    float: right;
-    padding-right: 1rem;
+.nav-list {
+    font-size: 1.1em;
+    left: 0;
+    list-style: none;
+    font-size: 1.1em;
+    padding: 1em;
+    top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-header nav a {
-    display: inline-block;
+.logo {
+    font-size: 3em;
+}
+
+.nav-list a {
+    margin-left: 20px;
+    color: rgba(255, 255, 255, .5);
     text-decoration: none;
-    margin-left: 0.5rem;
-    margin-top: 1.5rem;
-    border: 2px solid #a6fd04;
-    color: #a6fd04;
-    background-color: white;
-    font-size: 1.25rem;
-    border-radius: 290486px;
-    display: inline-flex;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    -webkit-transition-duration: .5s; /* Safari */
-    transition-duration: .5s;
 }
 
-header nav a:hover {
-    color: white;
-    background-color: #a6fd04;
+.nav-list a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: color .3s;
 }
 
-.clearfix {
-    clear: both;
-    content: '';
-    display: block;
+
+
+
+
+/* main */
+
+.main {
+    color: rgba(255, 255, 255, .5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url("../images/clouds.jpg");
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding: 35vh 1em 0;
 }
 
 .intro {
-    margin-top: 3rem;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
 
+.intro-left {
+    font-size: 1.2rem;
+}
+
+.intro-right {
+    font-size: 1rem; 
+    flex-basis: 60%;
+    margin-left: 30px;
+    border-left: 2px solid black;
+    padding-left: 10px;
+    padding-top: 35px;
+}
+
+.intro-right button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+    color: rgba(255, 255, 255, .5);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* .intro {
 }
 
 .intro h1, p{
     text-align: center;
 }
 
-.bottomOfIntro img {
-    padding-top: 5rem;
-    width: 100%;
 
-}
 
-.headshot {
-    text-align: center;
-    margin-top: 2rem;
-}
 
-.headshot img {
-    height: 30%;
-    width: 30%;
-    border-radius: 100%;
-    border: 2px #a6fd04 solid;
-}
+
+
 
 .aboutMe {
     padding-top: 5rem;
@@ -150,4 +188,4 @@ header nav a:hover {
     height: 4%;
     width: 4%;
     margin-right: 1rem;
-}
+} */
