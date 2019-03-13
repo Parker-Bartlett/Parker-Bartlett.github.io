@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Parker Bartlett</title>
 </head>
 
@@ -35,23 +36,44 @@
     
     <!-- end of main -->
 
-    <section class="aboutMe" id="aboutMe">
-        <div class="aboutMeContent">
-            <h2>A little about me...</h2>
-            <p>I'm a student at We Can Code IT, learning full stack we developement. Interested in taking my skills
-                to the next level, and serving customers with cutting edge technology.</p>
+    <section class="about-me">
+        <div class="about-me-content">
+            <div class="about-me-content_left">
+                <h2>A little about me...</h2>
+                <p>I'm a student at We Can Code IT, learning full stack we developement. Interested in taking my skills
+                    to the next level, and serving customers with cutting edge technology.</p>
+            </div>
+            <div class="about-me-content_right">
+                <img src="images/abstract-art-background-633409.jpg" alt="lap top">
+            </div>
         </div>
     </section>
-    <div class="container">
-        <section class="skills">
-            <div class="skillsContent">
-                <h2>Skills</h3>
-                    <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile
-                        (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design /
-                        Mobile • Structured Query Language (SQL) • Relational Databases • Source Control / Git</p>
-            </div>
-        </section>
-    </div>
+
+    <!-- end of about me -->
+
+
+    <section class="technological-skills">
+        <div class="technological-skills-block">
+            <h2>Technological Skills</h2>
+            <p>Being a life long learner is so important to me. I'm always looking for the next technology, to take my knowledge to the next level.</p>
+            <div class="technological-skills-container">
+            <p class="row1">Java</p>
+            <p class="row1">Spring</p>
+            <p class="row2">JPA<i</p>
+            
+            <p class="row3">TDD</p>
+            <p class="row4">OOP</p>
+            <p class="row8">JavaScript</p>
+            <p class="row8">MVC</p>
+            <p class="row9">HTML5</p>
+            <p class="row4">CSS3</p>
+            <p class="row5">Flexbox/Grid</p>
+            <p class="row6">Agile(Scrum)</p>
+            <p class="row7">Git/Github</p>
+            </div><!-- End of Technological Skills Container -->
+        </div><!-- Technological Skills Block -->
+    </section><!-- End of Technological Skills -->
+
     <section class="projects" id="projects">
         <h2>What I'm working on.</h2>
         <div class="projectsContent">
@@ -98,6 +120,10 @@
             </div>
         </footer>
     </div>
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

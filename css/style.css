@@ -13,6 +13,9 @@ html {
     /* width: 50%; */
 }
 
+body {
+    background-color: black;
+}
 
 /* header */
 
@@ -61,7 +64,7 @@ html {
 
 
 
-/* main */
+/* intro */
 
 .main {
     color: rgba(255, 255, 255, .5);
@@ -106,51 +109,103 @@ html {
 }
 
 
-/* .intro {
-}
-
-.intro h1, p{
-    text-align: center;
-}
 
 
 
 
+/* about me */
 
-
-
-.aboutMe {
+.about-me {
+    background-color: black;
+    color: rgba(255, 255, 255, .5); 
     padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: white;
-    background-color: #a6fd04;
-    width: 100%;
+    padding-bottom: 5rem; 
 }
 
-.aboutMeContent {
+.about-me-content {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-content_left, .about-me-content_right {
+    flex-basis: 100%;
+    margin-left: 30px;
+}
+
+.about-me-content_right img {
+    max-width: 100%;
+    border-left: 2px rgba(255, 255, 255, .5) solid;
+}
+
+
+
+
+
+
+
+
+/* Skills */
+
+/* Technological Skills */
+
+  .technological-skills {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 5rem;
+  }
+
+  .technological-skills-block {
+    color: black;
+    text-align: center;
+  }
+
+  .technological-skills-block > p {
     width: 50%;
     margin: 0 auto;
-    text-align: center;
-}
+  }
 
-.aboutMeContent h2 {
-    font-size: 2rem;
-}
+  .technological-skills-container {
+    color: black;
+    align-items: center;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    width: 50%;
+    padding-top: 2rem;
+    margin: 0 auto; 
+  }
+  
+  .technological-skills-container p {
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    font-weight: 600;
+    padding: .5em;
+    transition: background-color .5s, color .5s;
+  }
+  
+  .technological-skills-container p:hover {
+    background-color: black;
+    color: rgba(255, 255, 255, .5);
+    transition: background-color .5s, color .5s;
+  }
 
-.skills {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
 
-.skillsContent {
-    text-align: center;
-}
+
+
+
+
+/* projects */
 
 .projects {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    color: white;
-    background-color: #a6fd04;
+    color: rgba(255, 255, 255, .5);
+    background-color: black;
     width: 100%;
     text-align: center;
 }
@@ -170,14 +225,23 @@ html {
 .projectsContent img {
     margin-top: .5rem;
     width: 60%;
-    border: 2px solid white; 
+    border: 2px solid rgba(255, 255, 255, .5); 
 }
 
 .projectsContent img:hover {
     content: url("../images/code-snippet-grey.png");
 }
 
+
+
+
+
+
+
+/* footer */
+
 .footer {
+    background-color: rgba(255, 255, 255, .5);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin: 0 auto;
@@ -188,4 +252,30 @@ html {
     height: 4%;
     width: 4%;
     margin-right: 1rem;
-} */
+} 
+
+
+/* media querrys */
+
+@media (max-width: 780px) {
+    .intro {
+        width: 100%;
+    }
+
+    .about-me-content {
+        width: 100%;
+        padding-top: 0rem;
+    }
+
+    .technological-skills-block > p {
+        width: 100%;
+    }
+
+    .projectsContent {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem  ;
+        margin: 0 auto;
+    }
+}
