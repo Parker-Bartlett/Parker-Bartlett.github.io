@@ -60,7 +60,32 @@ body {
     transition: color .3s;
 }
 
+/* icon */
 
+.icon {
+    display: none;
+    padding-top: 10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 
 
 
@@ -278,4 +303,25 @@ body {
         grid-gap: 1rem  ;
         margin: 0 auto;
     }
+
+    .technological-skills-container {
+        color: black;
+        align-items: center;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        width: 80%;
+        padding-top: 2rem;
+        margin: 0 auto; 
+      }
+    
+      .nav-list {
+          display: none;
+      }
+
+      .icon {
+          display: block;
+      }
 }
