@@ -1,0 +1,24 @@
+.about-me {
+    padding-top: 0;
+}
+
+.about-me-content {
+    width: 70%;
+}
+
+.about-me-content_right img{
+    border: 0ch;
+}
+
+.github-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.github-link a{
+    color: rgba(255, 255, 255, .5); 
+}
+
+.github-link a:hover {
+    color: white;
+}
