@@ -4,7 +4,7 @@ describe('icon chould dd class of change', () => {
     let icon
     
     beforeEach(() => {
-        icon = document.getElementsByClassName('icon')
+        icon = document.querySelector('.icon')
     })
 
     test('should add change when clicked', () => {
@@ -12,4 +12,13 @@ describe('icon chould dd class of change', () => {
         expect(icon.classList.contains('change')).toBeTruthy()
     })
 
+})
+
+
+test('toggleHide should add hide', function() {
+	const testEl = document.createElement('p');
+	
+	app.toggleHide(testEl);
+	
+	expect(testEl.classList.contains('hide')).toBeTruthy
 })
