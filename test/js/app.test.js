@@ -1,14 +1,10 @@
 const toggleIcon = require('../../js/app.js')
 
 describe('icon chould dd class of change', () => {
-    let icon
-    
-    beforeEach(() => {
-        icon = document.querySelector('.icon')
-    })
 
     test('should add change when clicked', () => {
-        toggleIcon.toggleIcon()
+        const testElement = document.createElement('p')
+        toggleIcon.toggleIcon(testElement)
         expect(icon.classList.contains('change')).toBeTruthy()
     })
 
