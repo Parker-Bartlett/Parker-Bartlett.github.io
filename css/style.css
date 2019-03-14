@@ -320,7 +320,7 @@ body {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: -25px;
   width: 100%;
   text-align: center;
 }
@@ -331,7 +331,11 @@ body {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: -25px;
+}
+
+.project-link >a {
+  color: #f2f2f2;
 }
 
       /* The dots/bullets/indicators */
