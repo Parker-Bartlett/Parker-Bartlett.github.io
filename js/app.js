@@ -5,9 +5,14 @@ const next_a = document.querySelector('.next')
 const dotOne_span = document.querySelector('.dot-one')
 const dotTwo_span = document.querySelector('.dot-two')
 const dotThree_span = document.querySelector('.dot-three')
+const myBtn_button = document.getElementById('myBtn')
+const modal_div = document.getElementById('myModal')
+const span_span = document.getElementsByClassName("close")[0]
 
 
 
+
+// Nav bar
 
 function toggleIcon() {
   icon_div.classList.toggle('change')
@@ -28,6 +33,9 @@ navEventListener()
 
 
 
+
+
+// project carasoul
 
 function porjectsEventListener() {
   prev_a.addEventListener('click', () => plusSlides(-1))
@@ -72,6 +80,23 @@ function showSlides(n) {
 
 
 
+
+// modal for get in touch
+
+function getInTouchEventListener() {
+  myBtn_button.addEventListener('click', openModal)
+  span_span.addEventListener('click', closeModal)
+}
+
+function openModal() {
+  modal_div.classList.add('activeModal')
+}
+
+function closeModal() {
+  modal_div.classList.remove('activeModal')
+}
+
+getInTouchEventListener()
 
 
 module.exports = {
