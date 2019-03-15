@@ -17,24 +17,28 @@ function showMobileNav() {
   mobileNav_div.classList.toggle('show-mobile-nav')
 }
 
-function eventListener() {
+function navEventListener() {
   icon_div.addEventListener('click', toggleIcon);
   icon_div.addEventListener('click', showMobileNav);
 }
 
-eventListener()
+navEventListener()
 
 
 
 
 
-// prev_a.addEventListener('click', plusSlides(-1))
-// next_a.addEventListener('click', plusSlides(1))
 
-// dotOne_span.addEventListener('click', currentSlide(1))
-// dotTwo_span.addEventListener('click', currentSlide(2))
-// dotThree_span.addEventListener('click', currentSlide(3))
+function porjectsEventListener() {
+  prev_a.addEventListener('click', () => plusSlides(-1))
+  next_a.addEventListener('click', () => plusSlides(1))
 
+  dotOne_span.addEventListener('click', () => currentSlide(1))
+  dotTwo_span.addEventListener('click', () => currentSlide(2))
+  dotThree_span.addEventListener('click', () => currentSlide(3))
+}
+
+porjectsEventListener()
    
 
 var slideIndex = 1;
@@ -51,9 +55,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
