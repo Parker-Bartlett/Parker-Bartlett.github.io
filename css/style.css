@@ -183,11 +183,41 @@ body {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgba(21,31,33,0.5);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+
+.modal-content form {
+  padding-top: 20px;
+}
+
+.input {
+  background-color: black;
+  border: none;
+  color: rgba(255, 255, 255, .5);
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.submitButton {
+  background-color: black; /* Green */
+  border: none;
+  color: rgba(255, 255, 255, .5);
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 /* The Close Button */

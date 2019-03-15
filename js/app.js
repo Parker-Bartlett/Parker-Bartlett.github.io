@@ -98,6 +98,11 @@ function closeModal() {
 
 getInTouchEventListener()
 
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
 module.exports = {
   toggleIcon: toggleIcon
