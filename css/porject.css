@@ -26,3 +26,24 @@
 .github-link a:hover {
     color: white;
 }
+
+@media (max-width: 780px) {
+    
+    .about-me-content {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+    
+    .about-me-content_left, .about-me-content_right {
+        text-align: center;
+        margin-left: 0px;
+        margin-bottom: 2rem;
+    }
+
+    .tech-used{
+        margin-top: 1rem;
+    }
+
+
+}
