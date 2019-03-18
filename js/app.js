@@ -11,20 +11,19 @@ const span_span = document.getElementsByClassName("close")[0]
 
 
 
-
 // Nav bar
 
-function toggleIcon() {
-  icon_div.classList.toggle('change')
+const toggleChange = function(element) {
+  element.classList.toggle('change')
+  showMobileNav()
 }
 
-function showMobileNav() {
+const showMobileNav = function() {
   mobileNav_div.classList.toggle('show-mobile-nav')
 }
 
 function navEventListener() {
-  icon_div.addEventListener('click', toggleIcon);
-  icon_div.addEventListener('click', showMobileNav);
+  icon_div.addEventListener('click', () => toggleChange(icon_div))
 }
 
 navEventListener()
@@ -53,16 +52,16 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+const plusSlides = function(n) {
   showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+const currentSlide = function(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+const showSlides = function(n) {
   let i
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("dot");
@@ -84,16 +83,20 @@ function showSlides(n) {
 // modal for get in touch
 
 function getInTouchEventListener() {
-  myBtn_button.addEventListener('click', openModal)
-  span_span.addEventListener('click', closeModal)
+  myBtn_button.addEventListener('click', () => {
+    openModal(modal_div)
+  })
+  span_span.addEventListener('click', () => {
+    closeModal(modal_div)
+  })
 }
 
-function openModal() {
-  modal_div.classList.add('activeModal')
+const openModal = function(element) {
+  element.classList.add('activeModal')
 }
 
-function closeModal() {
-  modal_div.classList.remove('activeModal')
+const closeModal = function(element) {
+  element.classList.remove('activeModal')
 }
 
 getInTouchEventListener()
@@ -105,5 +108,11 @@ getInTouchEventListener()
 // }
 
 module.exports = {
-  toggleIcon: toggleIcon
+  toggleChange: toggleChange,
+  showMobileNav: showMobileNav,
+  openModal: openModal,
+  closeModal: closeModal,
+  plusSlides: plusSlides,
+  currentSlide: currentSlide,
+  showSlides: showSlides
 }
